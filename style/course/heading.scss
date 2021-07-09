@@ -1,0 +1,16 @@
+.heading {
+    font-family: var(--font-body);
+    font-style: normal;
+
+    letter-spacing: -0.002em;
+    color: #ffffff;
+
+    &-primary {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    &-secondary {
+        @include smallText;
+    }
+}

@@ -1,0 +1,33 @@
+.auth {
+    &-page {
+        background: linear-gradient(
+            354.2deg,
+            #3e3f62 -53.61%,
+            #343555 -39.78%,
+            #ae74ec 139.04%
+        );
+    }
+
+    &-footer {
+        @include smallText;
+        text-decoration-line: underline;
+    }
+
+    &-back-arrow {
+        width: 35px;
+        height: 29px;
+        background: url(../../../static/icons/back-arrow.svg) no-repeat;
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 60px;
+        z-index: 1;
+
+        &:hover {
+            cursor: pointer;
+        }
+        // &:active {
+
+        // }
+    }
+}

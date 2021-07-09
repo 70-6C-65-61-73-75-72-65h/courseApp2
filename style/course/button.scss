@@ -1,0 +1,46 @@
+.button {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+    /* or 73% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(56, 57, 91, 0.8);
+
+    border-radius: 12px;
+    background: linear-gradient(98.26deg, #ffffff 0%, #f2f1ff 100%);
+
+    padding: 18px 30px;
+
+    &.purple {
+        background: linear-gradient(218.45deg, #e56eff -27.8%, #8669ff 155.88%);
+        color: #ffffff;
+    }
+
+    &.outlined {
+        border: 3px solid #ffffff;
+    }
+
+    // &.with-icon {
+    //     &-arrow {
+    //         &-left {
+    //             // @include inputIconLeft(arrow-left, 32px, 32px);
+    //         }
+    //         &-right {
+    //             // @include inputIconRight(arrow-right, 32px, 32px);
+    //         }
+    //     }
+    // }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: initial;
+    }
+}
+
+// will be 2 spans

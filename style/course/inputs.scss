@@ -1,0 +1,57 @@
+%input {
+    max-width: 630px;
+    width: var(--widgets-width);
+    height: var(--widgets-height);
+    border-bottom: solid white 3px;
+
+    padding-bottom: 12px;
+    padding-top: 13px;
+
+    box-sizing: border-box;
+    transition: 180ms box-shadow ease-in-out;
+
+    &:focus {
+        /* ...existing styles */
+        box-shadow: 5px 5px 1px 3px grey;
+        outline: none;
+    }
+    background-color: transparent;
+}
+
+input[type='text'],
+input[type='password'] {
+    @extend %input;
+}
+
+input[type='text'] {
+    opacity: 0.5;
+}
+input[type='password'] {
+    @include inputIconRight(eye, 28px, 18px);
+
+    font: small-caption !important;
+    // used with heading secondary
+}
+
+.input-search {
+    @include inputIconLeft(search, 32px, 32px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input-label {
+    height: 29px;
+    width: var(--widgets-width);
+    text-align: left;
+    display: block;
+
+    @include smallText;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.input-field {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}

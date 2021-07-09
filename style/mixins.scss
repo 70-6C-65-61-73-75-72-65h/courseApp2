@@ -1,0 +1,33 @@
+// @mixin primaryParagraph {
+//     height: 48px;
+//     font-family: Nunito;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 40px;
+//     line-height: 48px;
+//     letter-spacing: -0.002em;
+//     color: #ffffff;
+// }
+
+@mixin smallText {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+// search
+// eye
+@mixin inputIconLeft($icon, $w, $h) {
+    background-image: url('~@static/icons/#{$icon}.svg');
+    background-size: #{$w} #{$h};
+    background-repeat: no-repeat;
+    background-position: calc(#{$w}/ 2) calc(#{$h}/ 2);
+    padding-left: calc(#{$w} * 2) !important;
+}
+@mixin inputIconRight($icon, $w, $h) {
+    background-image: url('~@static/icons/#{$icon}.svg');
+    background-size: #{$w} #{$h};
+    background-repeat: no-repeat;
+    background-position: calc(100% - #{$w}/ 2) calc(#{$h}/ 2);
+    padding-right: calc(#{$w} * 2) !important;
+}

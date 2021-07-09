@@ -1,0 +1,13 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixinsscss';
+
+@import 'course/**/*';
+
+body {
+    width: 750px;
+    height: 1624px;
+    left: 0px;
+    top: 0px;
+}
